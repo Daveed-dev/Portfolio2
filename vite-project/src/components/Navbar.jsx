@@ -1,48 +1,69 @@
 import React from 'react';
 
 const Navbar = () => {
+  const navLinks = document.querySelector('.nav-links');
+  // const bars = document.querySelector('.bars');
+  // const close = document.querySelector('.close');
+  // const openNav = () => {
+  //   bars.addEventListener('click', () => (navLinks.style.display = 'block'));
+  // };
+  // const closeNav = () => {
+  //   close.addEventListener('click', () => (navLinks.style.display = 'none'));
+  // };
+  const [open, setOpen] = React.useState(false);
+
   return (
-    <nav className='flex justify-between items-center h-16 px-16 bg-[var(--bl-color)] bg-bottom-[var(--gr-color)]'>
-      <div>
+    <nav className='nav flex justify-between items-center h-16 px-16 bg-[var(--bl-color)] bg-bottom-[var(--gr-color)]'>
+      <div className='flex items-center space-x-4'>
+        <i
+          className='fas fa-bars text-[var(--gr-color)] text-2xl cursor-pointer bars'
+          onClick={() => setOpen(true)}
+        ></i>
         <h1 className='nav-logo uppercase text-[var(--gr-color)] text-3xl font-bold'>
           Profile
         </h1>
       </div>
-      <ul className='nav-links flex space-x-16 list-none'>
-        <li>
+      <ul
+        className={`nav-links  md:flex space-x-16 list-none ${open ? 'open' : ''}`}
+      >
+        <i
+          className='fas fa-close text-[var(--gr-color)] text-2xl close'
+          onClick={() => setOpen(false)}
+        ></i>
+        <li className='nav-link'>
           <a
             href='#Home'
-            className='nav-link text-2xl hover:text-[var(--gr-color)]'
-            id='Home'
+            className=' text-2xl hover:text-[var(--gr-color)]'
+            onClick={() => setOpen(false)}
           >
             Home
           </a>
         </li>
-        <li>
+        <li className='nav-link'>
           <a
             href='#About'
             className='nav-link text-2xl hover:text-[var(--gr-color)]'
-            id='About'
+            onClick={() => setOpen(false)}
           >
             About
           </a>
         </li>
-        <li>
+        <li className='nav-link'>
           <a
             href='#Projects'
             className='nav-link text-2xl hover:text-[var(--gr-color)]'
-            id='Projects'
+            onClick={() => setOpen(false)}
           >
             Projects
           </a>
         </li>
-        <li>
+        <li className='nav-link'>
           <a
             href='#Contact'
             className='contactNav nav-link text-2xl hover:text-[var(--gr-color)]'
-            id='Contact'
+            onClick={() => setOpen(false)}
           >
-            Contact Me
+            Contact
           </a>
         </li>
       </ul>
