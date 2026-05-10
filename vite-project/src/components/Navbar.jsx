@@ -1,15 +1,6 @@
 import React from 'react';
 
 const Navbar = () => {
-  const navLinks = document.querySelector('.nav-links');
-  // const bars = document.querySelector('.bars');
-  // const close = document.querySelector('.close');
-  // const openNav = () => {
-  //   bars.addEventListener('click', () => (navLinks.style.display = 'block'));
-  // };
-  // const closeNav = () => {
-  //   close.addEventListener('click', () => (navLinks.style.display = 'none'));
-  // };
   const [open, setOpen] = React.useState(false);
 
   return (

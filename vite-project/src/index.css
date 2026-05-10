@@ -13,6 +13,7 @@
   --wh-color: #ffffff;
   --gr-color: #4da318;
   --light-dark: #3a3a3a;
+  --gray: #aaaaaa;
 }
 
 body {
@@ -100,3 +101,37 @@ NAVBAR
     cursor: pointer;
   }
 }
+
+/* 
+HEADER
+*/
+.dl-btn {
+  border: 2px solid var(--light-dark);
+  padding: 0.4rem 1.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* .typing {
+  border-right: solid 0.1rem var(--gr-color);
+
+  white-space: nowrap;
+  width: 0;
+  overflow: hidden;
+  animation:
+    typing 4s steps(18, end) forwards,
+    blink 0.8s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} */
