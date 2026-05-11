@@ -69,7 +69,7 @@ NAVBAR
 }
 @media screen and (max-width: 768px) {
   .nav {
-    padding: 0 2rem;
+    padding: 0 0.9rem;
   }
   .bars {
     display: block;
@@ -96,8 +96,8 @@ NAVBAR
   }
   .close {
     display: block;
-    padding-left: 7rem;
-    padding-bottom: 2rem;
+    margin-left: 7rem;
+    margin-bottom: 2rem;
     cursor: pointer;
   }
 }

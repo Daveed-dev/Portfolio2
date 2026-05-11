@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <header
         className='h-[calc(100vh-4rem)] py-15
-       lg:py-40 px-20 lg:flex justify-evenly gap-40 header font-sans leading-none'
+       lg:py-40 px-4 lg:flex justify-evenly gap-40 header font-sans leading-none'
       >
         <div
           className='headerImg w-60 md:w-80 mx-auto text-center
@@ -47,7 +47,7 @@ const Header = () => {
               <i className='fab fa-twitter text-xl text-[var(--gray)] lg:text-2xl'></i>
             </a>
           </div>
-          <div className='header-btns flex space-x-7 py-4 lg:py-12'>
+          <div className='header-btns flex space-x-7 py-8 lg:py-12'>
             <button className='nav-btn btn bg-[var(--gr-color)] text-white hover:bg-[var(--light-dark)] hover:text-[var(--gr-color)] '>
               Hire me
             </button>
