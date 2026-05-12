@@ -15,6 +15,9 @@
   --light-dark: #3a3a3a;
   --gray: #aaaaaa;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -27,6 +30,9 @@ body {
 /* 
 Global Styles
 */
+section {
+  border-bottom: 1px solid var(--gray);
+}
 
 .btn {
   padding: 0.2rem 1rem;
@@ -105,6 +111,9 @@ NAVBAR
 /* 
 HEADER
 */
+.header {
+  border-bottom: 1px solid var(--gray);
+}
 .dl-btn {
   border: 2px solid var(--light-dark);
   padding: 0.4rem 1.3rem;
@@ -112,26 +121,3 @@ HEADER
   cursor: pointer;
   transition: all 0.3s ease;
 }
-/* .typing {
-  border-right: solid 0.1rem var(--gr-color);
-
-  white-space: nowrap;
-  width: 0;
-  overflow: hidden;
-  animation:
-    typing 4s steps(18, end) forwards,
-    blink 0.8s step-end infinite;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-} */

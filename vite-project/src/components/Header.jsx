@@ -4,15 +4,16 @@ const Header = () => {
   return (
     <>
       <header
-        className='h-[calc(100vh-4rem)] py-15
-       lg:py-40 px-4 lg:flex justify-evenly gap-40 header font-sans leading-none'
+        className='min-h-[calc(100vh-4rem)] pt-15
+       lg:py-40 px-4 lg:flex justify-evenly gap-40 header font-sans leading-none '
+        id='Home'
       >
         <div
           className='headerImg w-60 md:w-80 mx-auto text-center
          lg:hidden rounded-full '
         >
           <img
-            src='../profile-img.jpeg'
+            src='../images/profile-img.jpeg'
             alt='ProfileImg'
             className='w-full rounded-full'
           />
@@ -29,19 +30,17 @@ const Header = () => {
           </p>
           <div className='headersocials flex space-x-7 mt-3 pl-3.5'>
             <a
-              href='#'
+              href='https://github.com/Daveed-dev'
+              target='_blank'
+              rel='noopener noreferrer'
               className='w-9 h-8 lg:w-11 lg:h-10 rounded-full border-[2px] border-dashed border-[var(--light-dark)] flex items-center justify-center   hover:border-[var(--gray)] transition-all duration-300 ease-in-out'
             >
               <i className='fab fa-github text-xl text-[var(--gray)] lg:text-2xl '></i>
             </a>
             <a
-              href='#'
-              className='w-9 h-8 lg:w-11 lg:h-10 rounded-full border-[2px] border-dashed border-[var(--light-dark)] flex items-center justify-center   hover:border-[var(--gray)] transition-all duration-300 ease-in-out'
-            >
-              <i className='fab fa-linkedin-in text-xl text-[var(--gray)]  lg:text-2xl'></i>
-            </a>
-            <a
-              href='#'
+              href='https://x.com/David_JoyDD'
+              target='_blank'
+              rel='noopener noreferrer'
               className='w-9 h-8 lg:w-11 lg:h-10 rounded-full border-[2px] border-dashed border-[var(--light-dark)] flex items-center justify-center   hover:border-[var(--gray)] transition-all duration-300 ease-in-out'
             >
               <i className='fab fa-twitter text-xl text-[var(--gray)] lg:text-2xl'></i>
@@ -49,7 +48,13 @@ const Header = () => {
           </div>
           <div className='header-btns flex space-x-7 py-8 lg:py-12'>
             <button className='nav-btn btn bg-[var(--gr-color)] text-white hover:bg-[var(--light-dark)] hover:text-[var(--gr-color)] '>
-              Hire me
+              <a
+                href='https://wa.me/2349067890701'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Hire Me
+              </a>
             </button>
             <button className=' dl-btn bg-transparent hover:text-[var(--gray)] '>
               <a href='/Ojekunle-David-Joy-CV.pdf' download>
@@ -60,7 +65,7 @@ const Header = () => {
         </div>
         <div className='headerImg w-80 hidden lg:block rounded-full'>
           <img
-            src='../profile-img.jpeg'
+            src='../images/profile-img.jpeg'
             alt='ProfileImg'
             className='w-full rounded-full'
           />

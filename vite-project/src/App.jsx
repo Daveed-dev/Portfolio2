@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './components/Navbar.jsx';
 import Header from './components/Header.jsx';
+import About from './components/About.jsx';
 import './index.css';
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <>
       <Navbar />
       <Header />
+      <About />
     </>
   );
 };
