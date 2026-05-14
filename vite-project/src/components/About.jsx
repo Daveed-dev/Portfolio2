@@ -15,7 +15,7 @@ const About = () => {
           />
         </div>
         <div className='about-text max-w-110 xl:max-w-150 py-8 md:max-w-200 mx-auto'>
-          <h2 className='text-[var(--gr-color)] text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center lg:text-left'>
+          <h2 className='text-[var(--gr-color)] text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center lg:text-left font-sans'>
             About Me
           </h2>
           <p className='text-lg lg:text-2xl '>
