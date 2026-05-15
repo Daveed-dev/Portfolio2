@@ -13,7 +13,7 @@ const Skill = () => {
         }
       },
       {
-        threshold: 0.6,
+        threshold: 0.5,
       },
     );
 
@@ -26,17 +26,17 @@ const Skill = () => {
   return (
     <>
       <section
-        className='skills min-h-screen bg-[var(--bl-color)] pt-12 pb-8 lg:pb-0 px-8 md:px-20 lg:py-25 w-full'
+        className='skills min-h-screen lg:min-h-[80vh] bg-[var(--bl-color)] pt-12 pb-4 px-8 md:px-20 lg:py-25 w-full'
         id='Skills'
         ref={skillsRef}
       >
         <h2 className='text-[var(--gr-color)] text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center font-sans '>
           Skills
         </h2>
-        <div className='grid lg:grid-cols-2 gap-13 md:px-12   pt-8 md:pt-0'>
+        <div className='grid lg:grid-cols-2 place-items-center gap-x-8 gap-y-10 md:px-12 lg:px-1 pt-8 md:pt-0'>
           {skillsData.map((skill, index) => (
             <div
-              className='skill-row w-full  lg:w-108'
+              className='skill-row w-full lg:w-110'
               key={index}
               data-pct={skill.pct}
             >
