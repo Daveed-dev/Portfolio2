@@ -60,7 +60,7 @@ const skillsData = [
           ry='5'
           fill='none'
           stroke='#61dafb'
-          stroke-width='1.5'
+          strokeWidth='1.5'
         />
 
         <ellipse
@@ -70,7 +70,7 @@ const skillsData = [
           ry='5'
           fill='none'
           stroke='#61dafb'
-          stroke-width='1.5'
+          strokeWidth='1.5'
           transform='rotate(60 16 16)'
         />
 
@@ -81,7 +81,7 @@ const skillsData = [
           ry='5'
           fill='none'
           stroke='#61dafb'
-          stroke-width='1.5'
+          strokeWidth='1.5'
           transform='rotate(120 16 16)'
         />
       </svg>
@@ -100,7 +100,7 @@ const skillsData = [
           rx='2'
           fill='none'
           stroke='#34d399'
-          stroke-width='1.8'
+          strokeWidth='1.8'
         />
         <rect
           x='20'
@@ -110,7 +110,7 @@ const skillsData = [
           rx='2'
           fill='none'
           stroke='#34d399'
-          stroke-width='1.8'
+          strokeWidth='1.8'
         />
         <line
           x1='12'
@@ -118,14 +118,14 @@ const skillsData = [
           x2='20'
           y2='15'
           stroke='#34d399'
-          stroke-width='1.8'
+          strokeWidth='1.8'
         />
         <polyline
           points='17,12 20,15 17,18'
           fill='none'
           stroke='#34d399'
-          stroke-width='1.8'
-          stroke-linejoin='round'
+          strokeWidth='1.8'
+          strokeLinejoin='round'
         />
         <line
           x1='12'
@@ -133,15 +133,15 @@ const skillsData = [
           x2='20'
           y2='18.5'
           stroke='#6ee7b7'
-          stroke-width='1.4'
-          stroke-dasharray='2 1.5'
+          strokeWidth='1.4'
+          strokeDasharray='2 1.5'
         />
         <polyline
           points='15,16 12,18.5 15,21'
           fill='none'
           stroke='#6ee7b7'
-          stroke-width='1.4'
-          stroke-linejoin='round'
+          strokeWidth='1.4'
+          strokeLinejoin='round'
         />
       </svg>
     ),
@@ -159,15 +159,15 @@ const skillsData = [
           points='16,4.5 26,10.2 26,21.8 16,27.5 6,21.8 6,10.2'
           fill='#3c873a'
           stroke='#5cb85c'
-          stroke-width='0.6'
+          strokeWidth='0.6'
         />
         <path
           d='M10 21V11l6 5 6-5v10'
           fill='none'
           stroke='#fff'
-          stroke-width='2'
-          stroke-linejoin='round'
-          stroke-linecap='round'
+          strokeWidth='2'
+          strokeLinejoin='round'
+          strokeLinecap='round'
         />
         <line
           x1='16'
@@ -175,8 +175,8 @@ const skillsData = [
           x2='16'
           y2='21'
           stroke='#fff'
-          stroke-width='2'
-          stroke-linecap='round'
+          strokeWidth='2'
+          strokeLinecap='round'
         />
       </svg>
     ),

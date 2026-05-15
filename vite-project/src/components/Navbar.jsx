@@ -21,7 +21,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    const sections = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+    const sections = ['Home', 'About', 'Skills', 'Project', 'Contact'];
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -31,7 +31,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.5 },
+      { threshold: 0.3 },
     );
 
     sections.forEach((section) => {
@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`nav flex justify-between items-center h-16 px-4  bg-[var(--bl-color)] bg-bottom-[var(--gr-color)] lg:px-8 xl:px-16 ${Fixed ? 'fixed top-0 left-0 right-0  bg-[var(--light-dark)]' : ''}`}
+      className={`nav flex justify-between items-center h-16 px-4  bg-[var(--bl-color)] bg-bottom-[var(--gr-color)] lg:px-8 xl:px-16 ${Fixed ? 'fixed top-0 left-0 right-0  bg-[var(--light-dark)] shadow-[0_0_12px_rgba(34,197,94,0.3)]' : ''}`}
     >
       <div className='flex items-center space-x-4'>
         <i
@@ -74,7 +74,7 @@ const Navbar = () => {
           } `}
         >
           <a
-            href='#Home'
+            href='#'
             className=' text-2xl hover:text-[var(--gr-color)]'
             onClick={() => setOpen(false)}
           >
@@ -108,14 +108,10 @@ const Navbar = () => {
           </a>
         </li>
         <li
-          className={`nav-link border-b-2 ${
-            activeSection === 'Projects'
-              ? 'text-[var(--gr-color)] border-[var(--gr-color)]'
-              : 'border-transparent'
-          } `}
+          className={`nav-link border-b-2 ${activeSection === 'Project' ? 'text-[var(--gr-color)] border-[var(--gr-color)]' : 'border-transparent'}`}
         >
           <a
-            href='#Projects'
+            href='#Project'
             className='nav-link text-2xl hover:text-[var(--gr-color)]'
             onClick={() => setOpen(false)}
           >

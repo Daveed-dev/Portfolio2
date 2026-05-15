@@ -26,7 +26,7 @@ const Skill = () => {
   return (
     <>
       <section
-        className='skills min-h-screen bg-[var(--bl-color)] pt-12 px-8 md:px-20 lg:py-25 w-full'
+        className='skills min-h-screen bg-[var(--bl-color)] pt-12 pb-8 lg:pb-0 px-8 md:px-20 lg:py-25 w-full'
         id='Skills'
         ref={skillsRef}
       >
