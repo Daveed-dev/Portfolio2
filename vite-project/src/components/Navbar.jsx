@@ -69,7 +69,7 @@ const Navbar = () => {
         <li
           className={`nav-link border-b-2 ${
             activeSection === 'Home'
-              ? 'text-[var(--gr-color)] border-[var(--gr-color)]'
+              ? 'text-[var(--gr-color)] border-[var(--gr-color)]font font-bold uppercase font-sans'
               : 'border-transparent'
           } `}
         >
@@ -84,7 +84,7 @@ const Navbar = () => {
         <li
           className={`nav-link border-b-2 ${
             activeSection === 'About'
-              ? 'text-[var(--gr-color)] border-[var(--gr-color)]'
+              ? 'text-[var(--gr-color)] border-[var(--gr-color)]font-bold uppercase font-sans'
               : 'border-transparent'
           } `}
         >
@@ -97,7 +97,7 @@ const Navbar = () => {
           </a>
         </li>
         <li
-          className={`nav-link border-b-2 ${activeSection === 'Skills' ? 'text-[var(--gr-color)] border-[var(--gr-color)]' : 'border-transparent'}`}
+          className={`nav-link border-b-2 ${activeSection === 'Skills' ? 'text-[var(--gr-color)] border-[var(--gr-color)] font-bold uppercase font-sans' : 'border-transparent'}`}
         >
           <a
             href='#Skills'
@@ -108,7 +108,7 @@ const Navbar = () => {
           </a>
         </li>
         <li
-          className={`nav-link border-b-2 ${activeSection === 'Project' ? 'text-[var(--gr-color)] border-[var(--gr-color)]' : 'border-transparent'}`}
+          className={`nav-link border-b-2 ${activeSection === 'Project' ? 'text-[var(--gr-color)] border-[var(--gr-color)] font-bold uppercase font-sans' : 'border-transparent'}`}
         >
           <a
             href='#Project'
@@ -121,7 +121,7 @@ const Navbar = () => {
         <li
           className={`nav-link border-b-2 ${
             activeSection === 'Contact'
-              ? 'text-[var(--gr-color)] border-[var(--gr-color)]'
+              ? 'text-[var(--gr-color)] border-[var(--gr-color)]font-bold uppercase font-sans'
               : 'border-transparent'
           } `}
         >

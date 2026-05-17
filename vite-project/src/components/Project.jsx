@@ -8,7 +8,7 @@ const Project = () => {
         className='Project min-h-screen w-full py-5 md:py-20 px-4 md:px-20 lg:px-12 bg-[var(--bl-color)]'
         id='Project'
       >
-        <h2 className='text-[var(--gr-color)] text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center font-sans '>
+        <h2 className='text-[var(--gr-color)] text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center font-sans uppercase'>
           Projects
         </h2>
         <div
@@ -17,7 +17,7 @@ const Project = () => {
         >
           {ProjectsData.map((pr) => (
             <div
-              className='projectcard w-full lg:w-108 lg:h-141 bg-[var(--light-dark)] mx-auto rounded-lg lg:mx-0 mb-8 pb-2 shadow-[0_0_12px_rgba(34,197,94,0.3)] transition-all duration-500 ease-in-out'
+              className='projectcard w-full lg:w-108 lg:h-141 bg-[var(--light-dark)] mx-auto rounded-lg lg:mx-0 mb-16 pb-2 shadow-[0_0_12px_rgba(34,197,94,0.3)] transition-all duration-500 ease-in-out'
               key={pr.id}
             >
               <img
